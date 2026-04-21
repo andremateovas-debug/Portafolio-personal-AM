@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
 
-function Navbar() {
+function Navbar({ onNav }) {
   const links = [
-    { label: 'Sobre mí', href: '#about' },
-    { label: 'Skills', href: '#skills' },
-    { label: 'Proyectos', href: '#projects' },
-    { label: 'Contacto', href: '#contact' },
+    { label: 'Sobre mí', id: 'about' },
+    { label: 'Skills', id: 'skills' },
+    { label: 'Proyectos', id: 'projects' },
+    { label: 'Contacto', id: 'contact' },
   ]
 
 
@@ -20,6 +20,9 @@ function Navbar() {
       window.addEventListener('scroll', handleScroll)
       return () => window.removeEventListener('scroll', handleScroll)
     }, [])
+
+
+    
     
   
   return (
@@ -28,11 +31,12 @@ function Navbar() {
         <span className="font-bold text-lg tracking-tight">AM</span>
         <ul className="flex gap-8">
           {links.map((link) => (
-            <li key={link.href}>
+            <li key={link.id}>
               
-               <a href={link.href}
-                className="text-sm text-black hover:text-gray-900 transition-colors duration-200"
-              >
+                <a onClick= {() => onNav(link.id)}
+
+                  className=" cursor-pointer text-sm text-black hover:text-gray-900 transition-colors duration-200"
+                >
                 {link.label}
               </a>
             </li>

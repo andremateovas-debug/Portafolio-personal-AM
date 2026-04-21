@@ -1,13 +1,31 @@
+import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import PruebaDeSection from './components/PruebaDeSection'
+import About from './components/About'
 
 function App() {
+  const [currentSection, setCurrentSection] = useState('hero')
+  const [visible, setVisible] = useState(true)
+
+  const sections = {
+    hero: <Hero />,
+    about: <About />,
+  }
+
+  const clickNav = (id) => {
+    setVisible(false)
+    setTimeout(() => {
+      setCurrentSection(id)
+      setVisible(true)
+    }, 300)
+  }
+
   return (
     <div>
-      <Navbar />
-      <Hero />
-      
+      <Navbar onNav={clickNav} />
+      <div style={{ opacity: visible ? 1 : 0, transition: 'opacity 0.3s ease-in-out' }}>
+        {sections[currentSection]}
+      </div>
     </div>
   )
 }
