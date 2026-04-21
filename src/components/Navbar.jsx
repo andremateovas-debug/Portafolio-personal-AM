@@ -15,7 +15,7 @@ function Navbar() {
             <li key={link.href}>
               
                <a href={link.href}
-                className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200"
+                className="text-sm text-black hover:text-gray-900 transition-colors duration-200"
               >
                 {link.label}
               </a>
