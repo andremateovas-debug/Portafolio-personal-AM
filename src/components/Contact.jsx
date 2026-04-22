@@ -1,27 +1,30 @@
 function Contact() {
   const info = [
     {
-      label: 'Email',
+      label: 'Correo de contacto',
       value: 'andremateovas@gmail.com',
       href: 'mailto:andremateovas@gmail.com',
-      icon: '✉️',
-    },
-    {
-      label: 'GitHub',
-      value: 'github.com/andremateovas-debug',
-      href: 'https://github.com/andremateovas-debug',
-      icon: '🐙',
-    },
-    {
-      label: 'LinkedIn',
-      value: 'linkedin.com/in/andremateo',
-      href: 'https://linkedin.com',
       icon: '',
     },
-
-
-
-
+    {
+      label: 'Mi perfil de GitHub',
+      value: 'github.com/andremateovas-debug',
+      href: 'https://github.com/andremateovas-debug',
+      icon: '',
+    },
+    {
+      label: 'Mi perfil de LinkedIn',
+      value: 'linkedin.com/in/andremateovas',
+      href: 'https://www.linkedin.com/in/andremateovas/',
+      icon: '',
+    },
+    {
+      label: 'Mi perfil de Instagram',
+      value: '@matunjo__',
+      href: 'https://www.instagram.com/matunjo__/',
+      icon: '',
+    },
+    
 
   ]
 
@@ -32,9 +35,14 @@ function Contact() {
         
         <div className="flex flex-col justify-center gap-6">
           <h2 className="text-3xl font-bold mb-2">Contacto</h2>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-400 text-sm">
             ¿Tienes un proyecto, una oportunidad o simplemente quieres conectar? 
             Contactame!
+          </p>
+
+          <p className="text-gray-400 text-sm">
+            Aqui hay algunos perfiles comerciales mios e incluso
+            un formulario para el envio de un correo automatico a mi bandeja principal !!
           </p>
 
           <div className="flex flex-col gap-4 mt-4">
@@ -56,12 +64,13 @@ function Contact() {
           </div>
         </div>
 
-        
+
+
         <div className="bg-white/5 rounded-2xl p-8 flex flex-col gap-5">
           <h3 className="text-lg font-semibold">Envíame un mensaje</h3>
 
           <div className="flex flex-col gap-1">
-            <label className="text-xs text-gray-500 uppercase tracking-widest">Nombre</label>
+            <label className="text-xs text-gray-500 uppercase tracking-widest">Nombre completo </label>
             <input
               type="text"
               placeholder="Tu nombre"
@@ -88,7 +97,8 @@ function Contact() {
           </div>
 
           <button
-            className="bg-white text-black text-sm font-semibold px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors duration-200 mt-2"
+            className="bg-white text-black text-sm font-semibold px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors duration-200 mt-2 cursor-pointer"
+            
           >
             Enviar mensaje →
           </button>
