@@ -2,9 +2,12 @@ import { useState, useEffect } from 'react'
 
 import fondo from '../assets/images/fondohero.png'
 
-
-
-function Hero() {
+function Hero({onNav}) {
+  const links = [
+    { label: 'Proyectos', id: 'projects' },
+    { label: 'Contacto', id: 'Contact' },
+  ]
+  
   const roles = [
     'Fullstack Developer',
     'Desarrollador web',
@@ -41,6 +44,8 @@ function Hero() {
 //      }, 500)
 
 
+
+
   return (
     <section className="min-h-screen flex items-center pt-32 pb-20 px-6"
         style={{ backgroundImage: `url(${fondo})`} }
@@ -74,25 +79,25 @@ function Hero() {
         </p>
 
 
-
+        
         <div className="flex gap-4">
-          
-            <a href="#projects"
-            className="bg-black text-white text-sm px-6 py-3 rounded-lg hover:bg-transparent transition-colors duration-200"
-          >
-            Ver proyectos
-          </a>
-          
-            <a href="#contact"
-            className="bg-black text-white text-sm px-6 py-3 rounded-lg hover:bg-transparent transition-colors duration-200"
-          >
-            Contacto
-          </a>
-        </div>
+        <button
+          onClick={() => onNav('projects')}
+          className="bg-black text-white text-sm px-6 py-3 rounded-lg hover:bg-transparent transition-colors duration-200"
+        >
+          Ver proyectos
+        </button>
 
+        <button
+          onClick={() => onNav('contact')}
+          className="bg-black text-white text-sm px-6 py-3 rounded-lg hover:bg-transparent transition-colors duration-200"
+        >
+          Contacto
+        </button>
+        </div>
       </div>
     </section>
   )
-}
+} 
 
 export default Hero
