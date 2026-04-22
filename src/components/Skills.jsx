@@ -4,6 +4,8 @@ function Skills() {
 
 const skills = [
   { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', desc: 'Lógica, DOM, fetch, ES6+' },
+  { name: 'html', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', desc: 'Estructura y semántica web' },
+  
   { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', desc: 'Componentes, hooks, estado' },
   { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', desc: 'Scripts, ML, MediaPipe' },
   { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', desc: 'Control de versiones, GitHub' },
@@ -18,7 +20,6 @@ const skills = [
   { name: 'Paint.NET', icon: iconopaint, desc: 'Edición de sprites y assets' },
 ]
 
-function Skills() {
   return (
     <section id="skills" className="min-h-screen bg-gray-950 text-white py-20 px-6">
       <div className="max-w-5xl mx-auto">
@@ -45,5 +46,7 @@ function Skills() {
     </section>
   )
 }
-}
+
+
+
 export default Skills
