@@ -1,3 +1,5 @@
+import iconopaint from '../assets/images/icons/paintnet.png'
+
 function Skills() {
 
 const skills = [
@@ -13,7 +15,7 @@ const skills = [
   { name: 'Flutter', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg', desc: 'Apps móviles multiplataforma' },
   { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', desc: 'Bases de datos, queries, relaciones' },
   { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg', desc: 'Backend, APIs, sistemas web' },
-  { name: 'Paint.NET', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg', desc: 'Edición de sprites y assets' },
+  { name: 'Paint.NET', icon: iconopaint, desc: 'Edición de sprites y assets' },
 ]
 
 function Skills() {

@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 function Navbar({ onNav }) {
   const links = [
     { label: 'Sobre mí', id: 'about' },
-    { label: 'Skills', id: 'skills' },
+    { label: 'Habilidades', id: 'skills' },
     { label: 'Proyectos', id: 'projects' },
     { label: 'Contacto', id: 'contact' },
     { label: 'inicio', id: 'hero' },

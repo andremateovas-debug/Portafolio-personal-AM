@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Contact from './components/Contact'
+import Skills from './components/Skills'
 
 function App() {
   const [currentSection, setCurrentSection] = useState('hero')
@@ -19,6 +20,7 @@ function App() {
   const sections = {
     hero: <Hero onNav={clickNav}/>,
     about: <About />,
+    skills: <Skills />,
     contact: <Contact />,
   }
 
