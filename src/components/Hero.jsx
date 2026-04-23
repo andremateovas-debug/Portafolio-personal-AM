@@ -94,6 +94,10 @@ function Hero({onNav}) {
         >
           Contacto
         </button>
+
+        <button className='bg-white text-black text-sm px-6 py-3 rounded-lg hover:bg-blue-400 transition-colors duration-200'>
+          Aun en desarrollo!
+        </button>
         </div>
       </div>
     </section>

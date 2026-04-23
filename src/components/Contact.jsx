@@ -36,7 +36,7 @@ function Contact() {
         <div className="flex flex-col justify-center gap-6">
           <h2 className="text-3xl font-bold mb-2">Contacto</h2>
           <p className="text-gray-400 text-sm">
-            ¿Tienes un proyecto, una oportunidad o simplemente quieres conectar? 
+            ¿Tienes un proyecto o una oportunidad donde te interese que participe? 
             Contactame!
           </p>
 

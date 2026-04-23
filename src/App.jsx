@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Contact from './components/Contact'
 import Skills from './components/Skills'
+import Projects from './components/Projects'
 
 function App() {
   const [currentSection, setCurrentSection] = useState('hero')
@@ -22,6 +23,7 @@ function App() {
     about: <About />,
     skills: <Skills />,
     contact: <Contact />,
+    projects: <Projects />,
   }
 
   return (
