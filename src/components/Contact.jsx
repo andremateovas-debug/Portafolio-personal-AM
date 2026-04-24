@@ -1,8 +1,8 @@
 function Contact() {
   const info = [
     {
-      label: 'Correo de contacto',
-      value: 'andremateovas@gmail.com',
+      label: 'Correo y numero de contacto',
+      value: 'andremateovas@gmail.com | 6241219430',
       href: 'mailto:andremateovas@gmail.com',
       icon: '',
     },
@@ -76,6 +76,17 @@ function Contact() {
               placeholder="Tu nombre"
               className="bg-white/10 text-white text-sm rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-white/30 placeholder-gray-600 transition"
             />
+          </div>
+
+          <div className="flex flex-col gap-1">
+            <label className="text-xs text-gray-500 uppercase tracking-widest">Telefono</label>
+            <input
+              type="tel"
+              placeholder="6241219430"
+              className="bg-white/10 text-white text-sm rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-white/30 placeholder-gray-600 transition"
+            />
+
+
           </div>
 
           <div className="flex flex-col gap-1">
